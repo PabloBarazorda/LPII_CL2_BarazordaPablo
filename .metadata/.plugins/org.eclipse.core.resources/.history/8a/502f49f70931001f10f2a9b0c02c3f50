@@ -1,0 +1,61 @@
+package dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import interfaces.IUsuario;
+import model.TblUsuariocl2;
+
+public class ClassUsuarioImp implements IUsuario {
+
+	@Override
+	public void RegistrarUsuario(TblUsuariocl2 usuario) {
+		//establecer la cadena de conexion con la unidad de persistencia
+		EntityManagerFactory em=Persistence.createEntityManagerFactory("BDpablobarazordacl2");
+
+		//gestionar las entidades
+		EntityManager emanager=em.createEntityManager();
+
+		//iniciamos la transaccion
+		emanager.getTransaction().begin();
+
+		//registramos
+		emanager.persist(usuario);
+		
+		//emitimos mensaje por consola
+		System.out.print("Usuario Registrado en la BD");
+		//configuramos
+		emanager.getTransaction().commit();
+		//cerramos
+		emanager.close();
+		
+	}
+
+	@Override
+	public void ActualizarUsuario(TblUsuariocl2 usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void EliminarUsuario(TblUsuariocl2 usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public TblUsuariocl2 BuscarUsuario(TblUsuariocl2 usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<TblUsuariocl2> ListadoUsuario() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,4 @@
+127.0.0.1 - - [22/Jun/2024:18:50:37 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [22/Jun/2024:18:50:38 -0500] "GET /LPII_CL2_BarazordaPablo/index.jsp HTTP/1.1" 200 92
+127.0.0.1 - - [22/Jun/2024:19:28:34 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [22/Jun/2024:19:28:35 -0500] "GET /LPII_CL2_BarazordaPablo/RegistroUsuario.jsp HTTP/1.1" 200 326

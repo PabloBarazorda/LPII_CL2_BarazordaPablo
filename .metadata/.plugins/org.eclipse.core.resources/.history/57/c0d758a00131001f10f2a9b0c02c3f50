@@ -1,0 +1,8 @@
+package interfaces;
+
+import model.TblProductocl2;
+
+public interface IProducto {
+
+	public void RegistrarProducto (TblProductocl2 producto);
+} // fin del producto

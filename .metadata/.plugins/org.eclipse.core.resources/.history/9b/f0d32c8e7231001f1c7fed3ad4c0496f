@@ -1,0 +1,20 @@
+package testEntidades;
+
+import dao.ClassUsuarioImp;
+import model.TblUsuariocl2;
+
+public class TestEntidadUsuario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TblUsuariocl2 usuario = new TblUsuariocl2();
+		ClassUsuarioImp crud = new ClassUsuarioImp();
+		
+		usuario.setUsuariocl2("Carloncho");
+		usuario.setPassword("holagentita22");
+		
+		crud.RegistrarUsuario(usuario);
+	}
+
+}
